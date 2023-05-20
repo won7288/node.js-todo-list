@@ -1,0 +1,33 @@
+서버 -> 클라이언트로부터 요청을 받으면, 요청한 내용을 보내주는 프로그램
+
+요청은 4개 방식이 있다
+1. 읽기(GET)
+2. 쓰기(POST)
+3. 수정(PUT)
+4. 삭제(DELETE)
+
+JavaScript
+웹페이지를 다이나믹하게 바꿔주기 가능 -> 정적인 HTML을 동적기능 추가
+HTML 조작이 가능하기 때문
+
+JavaScript 해석은 누가 해석하는가 -> 브라우저가 해석
+
+Node.js(V8)
+브라우저 내에서 말고도 다른 환경에서도 JavaScript 실행할 수 있게 도와줌
+자바스크립트 실행창, 실행환경 => 런타임
+
+Node.js 특징
+Event-driven, Non blocking/IO(비동기 방식)
+요청이 많거나 오래걸리는 요청이 있어도 멈추거나 요청 대기시간X
+주로 웹서비스 만드는데 사용
+
+npm -> 라이브러리 설치를 도와주는 도구
+라이브러리를 어떤걸 사용했는지 기록을 하면 좋다
+-> package.json에 기록이 됨
+
+nodemon -> 서버 재실행 자동화 라이브러리
+nodemon 실행시 오류가 뜰때
+powershell 관리자권한 실행후
+executionpolicy 입력
+set-executionpolicy unrestricted
+y 입력
